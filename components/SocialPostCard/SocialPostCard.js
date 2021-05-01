@@ -102,6 +102,7 @@ const CloseButton = styled.div`
     cursor: pointer;
     font-size: 12px;
     font-family: ${theme.fontOverpass};
+    margin-top: 10px;
 `;
 
 const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) => {
