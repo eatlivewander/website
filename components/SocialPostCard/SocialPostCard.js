@@ -43,6 +43,7 @@ const DialogContainer = styled(Dialog)`
     width: 340px;
     height: 690px;
     margin-top: 20px;
+    position: relative;
 
     @media ${theme.tablet} {
         width: 720px;
@@ -86,7 +87,7 @@ const ProductsContainer = styled.div`
     height: 600px;
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: hidden;
 `;
 
@@ -104,6 +105,14 @@ const CloseButton = styled.div`
     font-size: 12px;
     font-family: ${theme.fontOverpass};
     margin-top: 10px;
+`;
+
+const SwipeGesture = styled.img`
+    position: absolute;
+    bottom: 165px;
+    right: 10px;
+    width: 250px;
+    height: auto;
 `;
 
 const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) => {
@@ -165,6 +174,10 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
                 <CloseButton onClick={close} ref={buttonRef}>
                     CLOSE
                 </CloseButton>
+                <SwipeGesture
+                    src="https://wndr.click/wp-content/uploads/2021/05/swipe-left.gif"
+                    alt="swipe left gesture"
+                />
             </DialogContainer>
         </>
     );
