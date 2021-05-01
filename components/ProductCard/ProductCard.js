@@ -11,7 +11,7 @@ const CardContainer = styled.div`
     width: 250px;
     height: auto;
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 20px;
 `;
 
 const ProductName = styled.div`
@@ -28,8 +28,8 @@ const ProductName = styled.div`
 `;
 
 const ProductImage = styled.img`
-    width: 250px;
-    height: auto;
+    width: auto;
+    height: 310px;
     margin-top: 10px;
     margin-bottom: 15px;
 `;

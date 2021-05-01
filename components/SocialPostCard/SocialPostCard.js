@@ -72,6 +72,11 @@ const ViewOriginalIconsWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
+
+    &:active,
+    &:focus {
+        outline: 0 !important;
+    }
 `;
 
 const SocialIcon = styled.img`
