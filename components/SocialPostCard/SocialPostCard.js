@@ -65,7 +65,7 @@ const ViewOriginalTextWrapper = styled.div`
 `;
 
 const ViewOriginalIconsWrapper = styled.div`
-    height: 50px;
+    height: 35px;
     width: 90%;
     display: flex;
     flex-direction: row;
@@ -75,7 +75,7 @@ const ViewOriginalIconsWrapper = styled.div`
 `;
 
 const SocialIcon = styled.img`
-    height: 42px;
+    height: 32px;
     width: auto;
     margin: 0 10px;
 `;
