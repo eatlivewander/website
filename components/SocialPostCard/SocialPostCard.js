@@ -111,7 +111,7 @@ const SwipeGesture = styled.img`
     position: absolute;
     bottom: 165px;
     right: 10px;
-    width: 250px;
+    width: 200px;
     height: auto;
 `;
 
@@ -120,6 +120,11 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
     const open = () => setShowDialog(true);
     const close = () => setShowDialog(false);
     const buttonRef = useRef();
+    const gesture = [
+        'https://wndr.click/wp-content/uploads/2021/05/swipe-left-crop.gif',
+        'https://wndr.click/wp-content/uploads/2021/05/swipe-left-crop-1.gif',
+    ];
+    const [loopTracker, setLoopTracker] = useState(gesture[0]);
 
     return (
         <>
@@ -175,8 +180,11 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
                     CLOSE
                 </CloseButton>
                 <SwipeGesture
-                    src="https://wndr.click/wp-content/uploads/2021/05/swipe-left.gif"
+                    src={loopTracker}
                     alt="swipe left gesture"
+                    onClick={() =>
+                        loopTracker === gesture[0] ? setLoopTracker(gesture[1]) : setLoopTracker(gesture[0])
+                    }
                 />
             </DialogContainer>
         </>
