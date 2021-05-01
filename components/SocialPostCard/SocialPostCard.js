@@ -1,7 +1,7 @@
 /* eslint-disable no-shadow */
 /* eslint-disable array-callback-return */
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { Dialog } from '@reach/dialog';
@@ -72,11 +72,6 @@ const ViewOriginalIconsWrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 10px;
-
-    &:active,
-    &:focus {
-        outline: 0 !important;
-    }
 `;
 
 const SocialIcon = styled.img`
@@ -114,6 +109,7 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
     const [showDialog, setShowDialog] = useState(false);
     const open = () => setShowDialog(true);
     const close = () => setShowDialog(false);
+    const buttonRef = useRef();
 
     return (
         <>
@@ -160,7 +156,9 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
                         );
                     })}
                 </ProductsContainer>
-                <CloseButton onClick={close}>CLOSE</CloseButton>
+                <CloseButton onClick={close} initialFocusRef={buttonRef}>
+                    CLOSE
+                </CloseButton>
             </DialogContainer>
         </>
     );
