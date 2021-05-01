@@ -1,14 +1,8 @@
 /* eslint-disable react/prop-types */
 import '../styles/globals.css';
-import { ApolloProvider } from '@apollo/client';
-import { client } from '../lib/apollo';
 
 function MyApp({ Component, pageProps }) {
-    return (
-        <ApolloProvider client={client}>
-            <Component {...pageProps} />
-        </ApolloProvider>
-    );
+    return <Component {...pageProps} />;
 }
 
 export default MyApp;
