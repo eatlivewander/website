@@ -8,7 +8,7 @@ const ShopContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 65px auto;
+    margin: 20px auto;
 
     @media ${theme.tablet} {
         flex-direction: row;

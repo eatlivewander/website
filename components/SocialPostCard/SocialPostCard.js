@@ -42,6 +42,7 @@ const DialogContainer = styled(Dialog)`
     align-items: center;
     width: 340px;
     height: 690px;
+    margin-top: 20px;
 
     @media ${theme.tablet} {
         width: 720px;
@@ -85,7 +86,7 @@ const ProductsContainer = styled.div`
     height: 600px;
     display: flex;
     flex-direction: row;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
 `;
 
@@ -121,7 +122,12 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
                     Shop This Post
                 </Button>
             </CardContainer>
-            <DialogContainer aria-label="Product Links" isOpen={showDialog} onDismiss={close}>
+            <DialogContainer
+                aria-label="Product Links"
+                isOpen={showDialog}
+                onDismiss={close}
+                initialFocusRef={buttonRef}
+            >
                 <ViewOriginalContainer>
                     <ViewOriginalTextWrapper>View Original Post</ViewOriginalTextWrapper>
                     <ViewOriginalIconsWrapper>
@@ -156,7 +162,7 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
                         );
                     })}
                 </ProductsContainer>
-                <CloseButton onClick={close} initialFocusRef={buttonRef}>
+                <CloseButton onClick={close} ref={buttonRef}>
                     CLOSE
                 </CloseButton>
             </DialogContainer>

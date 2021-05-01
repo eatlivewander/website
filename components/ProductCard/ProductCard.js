@@ -11,7 +11,8 @@ const CardContainer = styled.div`
     width: 250px;
     height: auto;
     margin-top: 10px;
-    margin-right: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
 `;
 
 const ProductName = styled.div`
