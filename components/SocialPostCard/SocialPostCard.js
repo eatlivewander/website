@@ -1,7 +1,7 @@
 /* eslint-disable no-shadow */
 /* eslint-disable array-callback-return */
 /* eslint-disable react/prop-types */
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { Dialog } from '@reach/dialog';
@@ -42,6 +42,8 @@ const DialogContainer = styled(Dialog)`
     align-items: center;
     width: 340px;
     height: 690px;
+    margin-top: 20px;
+    position: relative;
 
     @media ${theme.tablet} {
         width: 720px;
@@ -105,10 +107,24 @@ const CloseButton = styled.div`
     margin-top: 10px;
 `;
 
+const SwipeGesture = styled.img`
+    position: absolute;
+    bottom: 165px;
+    right: 10px;
+    width: 200px;
+    height: auto;
+`;
+
 const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) => {
     const [showDialog, setShowDialog] = useState(false);
     const open = () => setShowDialog(true);
     const close = () => setShowDialog(false);
+    const buttonRef = useRef();
+    const gesture = [
+        'https://wndr.click/wp-content/uploads/2021/05/swipe-left-crop.gif',
+        'https://wndr.click/wp-content/uploads/2021/05/swipe-left-crop-1.gif',
+    ];
+    const [loopTracker, setLoopTracker] = useState(gesture[0]);
 
     return (
         <>
@@ -120,7 +136,12 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
                     Shop This Post
                 </Button>
             </CardContainer>
-            <DialogContainer aria-label="Product Links" isOpen={showDialog} onDismiss={close}>
+            <DialogContainer
+                aria-label="Product Links"
+                isOpen={showDialog}
+                onDismiss={close}
+                initialFocusRef={buttonRef}
+            >
                 <ViewOriginalContainer>
                     <ViewOriginalTextWrapper>View Original Post</ViewOriginalTextWrapper>
                     <ViewOriginalIconsWrapper>
@@ -155,7 +176,16 @@ const SocialPostCard = ({ buttonSize, imageURL, imageAlt, social, products }) =>
                         );
                     })}
                 </ProductsContainer>
-                <CloseButton onClick={close}>CLOSE</CloseButton>
+                <CloseButton onClick={close} ref={buttonRef}>
+                    CLOSE
+                </CloseButton>
+                <SwipeGesture
+                    src={loopTracker}
+                    alt="swipe left gesture"
+                    onClick={() =>
+                        loopTracker === gesture[0] ? setLoopTracker(gesture[1]) : setLoopTracker(gesture[0])
+                    }
+                />
             </DialogContainer>
         </>
     );
