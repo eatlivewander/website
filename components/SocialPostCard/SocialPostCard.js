@@ -41,7 +41,7 @@ const DialogContainer = styled(Dialog)`
     flex-direction: column;
     align-items: center;
     width: 340px;
-    height: 680px;
+    height: 690px;
 
     @media ${theme.tablet} {
         width: 720px;
@@ -96,7 +96,7 @@ const CloseButton = styled.div`
     text-align: center;
     border: 0.5px #888 solid;
     width: 100px;
-    height: 45px;
+    height: 40px;
     background-color: #000000;
     color: #ffffff;
     cursor: pointer;
