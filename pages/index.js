@@ -9,9 +9,9 @@ const data = [
     {
         social: [
             { name: 'facebook', posted: false, url: null },
-            { name: 'instagram', posted: false, url: 'https://www.instagram.com/tv/COWD4S-nPJZ' },
+            { name: 'instagram', posted: true, url: 'https://www.instagram.com/tv/COqAbKABiOX/' },
             { name: 'pinterest', posted: true, url: 'https://pin.it/ugVni5r' },
-            { name: 'tiktok', posted: false, url: 'https://www.tiktok.com/@eatlivewander/video/6956326890739223813' },
+            { name: 'tiktok', posted: true, url: 'https://www.tiktok.com/@eatlivewander/video/6960315675256671493' },
         ],
         products: [
             {
@@ -107,7 +107,7 @@ const data = [
                 price: '$62.00',
             },
         ],
-        postURL: 'https://pin.it/ugVni5r',
+        postURL: 'https://www.tiktok.com/@eatlivewander/video/6960315675256671493',
         imageURL: 'https://wndr.click/wp-content/uploads/2021/05/Earl-Grey-Sweet-Iced-Tea-Cocktail-Recipe-Tutorial.jpg',
         imageAlt: 'Earl Grey Sweet Iced Tea Cocktail Recipe Tutorial',
     },
