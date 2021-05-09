@@ -65,6 +65,14 @@ const data = [
                 price: '$9.99',
             },
             {
+                name: '16-Ounce Glass Swing Top Bottles',
+                store: 'Amazon',
+                buyURL: 'https://amzn.to/3f3lQPQ',
+                imageURL: 'https://wndr.click/wp-content/uploads/2021/05/16-Ounce-Glass-Swing-Top-Bottles.jpg',
+                imageAlt: '16-Ounce Glass Swing Top Bottles',
+                price: '$19.99',
+            },
+            {
                 name: 'OXO Steel Angled Measuring Jigger',
                 store: 'Amazon',
                 buyURL: 'https://amzn.to/3txbyMT',
