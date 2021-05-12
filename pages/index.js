@@ -9,9 +9,9 @@ const data = [
     {
         social: [
             { name: 'facebook', posted: false, url: null },
-            { name: 'instagram', posted: false, url: 'https://www.instagram.com/tv/COqAbKABiOX/' },
-            { name: 'pinterest', posted: false, url: 'https://pin.it/ugVni5r' },
-            { name: 'tiktok', posted: false, url: 'https://www.tiktok.com/@eatlivewander/video/6960315675256671493' },
+            { name: 'instagram', posted: true, url: 'https://www.instagram.com/p/COyRakGhL2n/' },
+            { name: 'pinterest', posted: true, url: 'https://pin.it/5eH0gZC' },
+            { name: 'tiktok', posted: true, url: 'https://www.tiktok.com/@eatlivewander/video/6961495354219056389' },
         ],
         products: [
             {
@@ -106,7 +106,7 @@ const data = [
                 price: '$11.99',
             },
         ],
-        postURL: 'https://www.tiktok.com/@eatlivewander/video/6960315675256671493',
+        postURL: 'https://www.tiktok.com/@eatlivewander/video/6961495354219056389',
         imageURL: 'https://wndr.click/wp-content/uploads/2021/05/Gruyere-And-Pepper-Jack-Gougeres-Recipe.png',
         imageAlt: 'Gruyere And Pepper Jack Gougeres Recipe',
     },
