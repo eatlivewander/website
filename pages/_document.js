@@ -52,6 +52,32 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
                         rel="stylesheet"
                     />
+                    <meta name="description" content="Helping you craft the lifestyle of your dreams" />
+                    <meta property="og:site_name" content="Eat Live Wander" />
+                    <meta name="title" property="og:title" content="Eat Live Wander" />
+                    <meta property="og:title" content="Eat Live Wander" />
+                    <meta property="og:type" content="website" />
+                    <meta property="og:description" content="Helping you craft the lifestyle of your dreams" />
+                    <meta
+                        name="description"
+                        property="og:description"
+                        content="Helping you craft the lifestyle of your dreams"
+                    />
+                    <meta
+                        property="og:image"
+                        content="https://wndr.click/wp-content/uploads/2021/05/eat-live-wander-square-logo-800x800-1.jpg"
+                    />
+                    <meta property="og:image:alt" content="Eat Live Wander" />
+                    <meta property="og:url" content="https://EatLiveWander.com" />
+                    <meta name="twitter:site" content="@eatlivewander" />
+                    <meta name="twitter:title" content="Eat Live Wander" />
+                    <meta name="twitter:description" content="Helping you craft the lifestyle of your dreams" />
+                    <meta
+                        name="twitter:image"
+                        content="https://wndr.click/wp-content/uploads/2021/05/eat-live-wander-square-logo-800x800-1.jpg"
+                    />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:site" content="https://EatLiveWander.com" />
                 </Head>
                 <body>
                     <Main />
