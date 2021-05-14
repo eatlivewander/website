@@ -7,15 +7,15 @@ import SocialPostCard from '../components/SocialPostCard';
 
 const data = [
     {
-        postURL: 'https://www.tiktok.com/@eatlivewander/video/6961495354219056389',
+        postURL: 'https://www.tiktok.com/@eatlivewander/video/6962098447419821317',
         imageURL:
             'https://wndr.click/wp-content/uploads/2021/05/myxen-vixen-woodford-reserve-bourbon-whiskey-spiked-lemonade-cocktail-tutorial-recipe.jpg',
         imageAlt: 'Myxen Vixen Woodford Reserve Bourbon Whiskey Spiked Lemonade Cocktail Tutorial Recipe',
         social: [
-            { name: 'facebook', posted: false, url: '' },
-            { name: 'instagram', posted: false, url: 'https://www.instagram.com/p/COyRakGhL2n/' },
+            { name: 'facebook', posted: true, url: 'https://fb.watch/5u78gBZVOG/' },
+            { name: 'instagram', posted: true, url: 'https://www.instagram.com/tv/CO2dH7nBonL/' },
             { name: 'pinterest', posted: true, url: 'https://pin.it/5xUK2in' },
-            { name: 'tiktok', posted: false, url: 'https://www.tiktok.com/@eatlivewander/video/6961495354219056389' },
+            { name: 'tiktok', posted: true, url: 'https://www.tiktok.com/@eatlivewander/video/6962098447419821317' },
         ],
         products: [
             {
