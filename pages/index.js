@@ -12,10 +12,10 @@ const data = [
             'https://wndr.click/wp-content/uploads/2021/05/Jungle-Bird-Myerss-Dark-Rum-Aperol-Dole-Pineapple-Wray-Nephew-Overproof-Rum.jpg',
         imageAlt: 'Jungle Bird Myers Dark Rum Aperol Dole Pineapple Wray Nephew Overproof Rum',
         social: [
-            { name: 'facebook', posted: false, url: 'https://fb.watch/5u78gBZVOG/' },
-            { name: 'instagram', posted: false, url: 'https://www.instagram.com/tv/CO2dH7nBonL/' },
+            { name: 'facebook', posted: true, url: 'https://fb.watch/5z14FcR5EP/' },
+            { name: 'instagram', posted: true, url: 'https://www.instagram.com/tv/CO-bDK8hWnP' },
             { name: 'pinterest', posted: true, url: 'https://pin.it/2CuhcDm' },
-            { name: 'tiktok', posted: false, url: 'https://www.tiktok.com/@eatlivewander/video/6962098447419821317' },
+            { name: 'tiktok', posted: true, url: 'https://www.tiktok.com/@eatlivewander/video/6963250692257615109' },
         ],
         products: [
             {
