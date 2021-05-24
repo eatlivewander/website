@@ -7,6 +7,64 @@ import SocialPostCard from '../components/SocialPostCard';
 
 const data = [
     {
+        postURL: 'https://pin.it/51F2Ua3',
+        imageURL:
+            'https://wndr.click/wp-content/uploads/2021/05/How-To-Steam-Clean-Glassware-Cutlery-Remy-Savage-Nude-Coupe-LSA-Champagne-Flute-Conair-Turbo.jpg',
+        imageAlt: 'How To Steam Clean Glassware Cutlery Remy Savage Nude Coupe LSA Champagne Flute Conair Turbo',
+        social: [
+            { name: 'facebook', posted: false, url: 'https://fb.watch/5z14FcR5EP/' },
+            { name: 'instagram', posted: false, url: 'https://www.instagram.com/tv/CO-bDK8hWnP' },
+            { name: 'pinterest', posted: true, url: 'https://pin.it/51F2Ua3' },
+            { name: 'tiktok', posted: false, url: 'https://www.tiktok.com/@eatlivewander/video/6963250692257615109' },
+        ],
+        products: [
+            {
+                name: 'Conair Turbo Extreme Steam Handheld Fabric Steamer',
+                store: 'Amazon',
+                buyURL: 'https://amzn.to/3bNWTam',
+                imageURL:
+                    'https://wndr.click/wp-content/uploads/2021/05/Conair-Turbo-Extreme-Steam-Hand-Held-Fabric-Steamer.jpg',
+                imageAlt: 'Conair Turbo Extreme Steam Handheld Fabric Steamer',
+                price: '$54.99',
+            },
+            {
+                name: 'NUFR White Cotton Gloves Set (6 Pairs)',
+                store: 'Amazon',
+                buyURL: 'https://amzn.to/3wuHJ1k',
+                imageURL: 'https://wndr.click/wp-content/uploads/2021/05/NUFR-White-Cotton-Gloves-Set.jpg',
+                imageAlt: 'NUFR White Cotton Gloves Set',
+                price: '$5.99',
+            },
+            {
+                name: 'LSA International Wine Grand Champagne Flute',
+                store: 'Amazon',
+                buyURL: 'https://amzn.to/3fgghPn',
+                imageURL:
+                    'https://wndr.click/wp-content/uploads/2021/05/LSA-International-Wine-Grand-Champagne-Flute.jpg',
+                imageAlt: 'LSA International Wine Grand Champagne Flute',
+                price: '$65.00',
+            },
+            {
+                name: 'Nude Glass Savage 2-Piece Coupe Glass Set',
+                store: 'Saks Fifth Avenue',
+                buyURL:
+                    'https://www.saksfifthavenue.com/product/nude-glass-savage-2-piece-coupe-glass-set-12909638.html',
+                imageURL: 'https://wndr.click/wp-content/uploads/2021/05/Nude-Glass-Savage-2-Piece-Coupe-Glass-Set.jpg',
+                imageAlt: 'Nude Glass Savage 2-Piece Coupe Glass Set',
+                price: '$35.00',
+            },
+            {
+                name: 'Royal Albert Old Country Roses 20-Piece Flatware Set',
+                store: 'Amazon',
+                buyURL: 'https://amzn.to/3vg88Qt',
+                imageURL:
+                    'https://wndr.click/wp-content/uploads/2021/05/Royal-Albert-Old-Country-Roses-20-Piece-Flatware-Set.jpg',
+                imageAlt: 'Royal Albert Old Country Roses 20-Piece Flatware Set',
+                price: '$75.00',
+            },
+        ],
+    },
+    {
         postURL: 'https://www.tiktok.com/@eatlivewander/video/6962098447419821317',
         imageURL:
             'https://wndr.click/wp-content/uploads/2021/05/Jungle-Bird-Myerss-Dark-Rum-Aperol-Dole-Pineapple-Wray-Nephew-Overproof-Rum.jpg',
